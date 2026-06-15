@@ -23,7 +23,7 @@ async function runTerminal() {
   if (!nameEl || !roleEl) return;
 
   await typeWriter(nameEl, 'Hamza Sheikh', 80, 400);
-  await typeWriter(roleEl, 'Cyber Security professional · Pune, India', 55, 1800);
+  await typeWriter(roleEl, 'Web Developer · Cybersecurity Enthusiast · Pune', 50, 1800);
 }
 
 runTerminal();
@@ -39,7 +39,6 @@ navToggle?.addEventListener('click', () => {
   nav.classList.toggle('open');
 });
 
-// Close nav when a link is clicked
 navLinks.forEach(link => {
   link.addEventListener('click', () => {
     nav.classList.remove('open');
@@ -80,7 +79,7 @@ sections.forEach(s => observer.observe(s));
    SCROLL REVEAL
 =========================== */
 const revealItems = document.querySelectorAll(
-  '.skill-card, .project-card, .stat, .about__text'
+  '.skill-card, .project-card, .stat, .about__text, .timeline__item'
 );
 
 const revealObserver = new IntersectionObserver(entries => {
